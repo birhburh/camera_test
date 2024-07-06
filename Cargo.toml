@@ -9,9 +9,7 @@ label = "Camera Test"
 min_sdk_version = 26
 
 [dependencies]
-# macroquad = {path = "../macroquad"}
-# macroquad-tiled = {path = "../macroquad/tiled"}
-# macroquad-profiler = {path = "../macroquad/profiler"}
-macroquad = "0.4"
-macroquad-tiled = "0.2"
-macroquad-profiler = "0.2"
+macroquad = { git = "https://github.com/not-fl3/macroquad.git" }
+
+[patch.crates-io]
+miniquad = { git = "https://github.com/not-fl3/miniquad.git" }

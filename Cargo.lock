@@ -55,8 +55,6 @@ name = "camera_test"
 version = "0.1.0"
 dependencies = [
  "macroquad",
- "macroquad-profiler",
- "macroquad-tiled",
 ]
 
 [[package]]
@@ -146,9 +144,8 @@ checksum = "89d92a4743f9a61002fae18374ed11e7973f530cb3a3255fb354818118b2203c"
 
 [[package]]
 name = "macroquad"
-version = "0.4.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a5e38150ee8116e349074252a59db0d85160cb1dbe3b8e3005c59c2e943a4f0f"
+version = "0.4.10"
+source = "git+https://github.com/not-fl3/macroquad.git#d30752199670e1373bbf13fab8181f375a1d48a4"
 dependencies = [
  "bumpalo",
  "fontdue",
@@ -161,29 +158,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "macroquad-profiler"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a0f3792c62d2a730a25ca837bbbdfadc7df4a54033533b9a12489f809f325e5"
-dependencies = [
- "macroquad",
-]
-
-[[package]]
-name = "macroquad-tiled"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a3b8791e385de2f6d399e9e4624a405e23c06855df35c134903fefc3bfb7241c"
-dependencies = [
- "macroquad",
- "nanoserde",
-]
-
-[[package]]
 name = "macroquad_macro"
 version = "0.1.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "64b1d96218903768c1ce078b657c0d5965465c95a60d2682fd97443c9d2483dd"
+source = "git+https://github.com/not-fl3/macroquad.git#d30752199670e1373bbf13fab8181f375a1d48a4"
 
 [[package]]
 name = "malloc_buf"
@@ -196,9 +173,8 @@ dependencies = [
 
 [[package]]
 name = "miniquad"
-version = "0.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "48c400bb9a91100e475d6e71c6c0bbb24579b8bfa89583bae3f068d7d32b32a3"
+version = "0.4.4"
+source = "git+https://github.com/not-fl3/miniquad.git#b0fa18b74b9fc4096551276fae60549208334419"
 dependencies = [
  "libc",
  "ndk-sys",
@@ -215,21 +191,6 @@ dependencies = [
  "adler",
  "simd-adler32",
 ]
-
-[[package]]
-name = "nanoserde"
-version = "0.1.35"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a983d0b19ed0fcd803c4f04f9b20d5e6dd17e06d44d98742a0985ac45dab1bc"
-dependencies = [
- "nanoserde-derive",
-]
-
-[[package]]
-name = "nanoserde-derive"
-version = "0.1.21"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4dc96541767a4279572fdcf9f95af9cc1c9b2a2254e7a079203c81e206a9059"
 
 [[package]]
 name = "ndk-sys"
